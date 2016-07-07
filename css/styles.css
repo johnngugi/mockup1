@@ -1,7 +1,9 @@
 h1 {
 	color: #0066ff;
 }
-
+body {
+	margin: 0;
+}
 /*
   ========================================
   Navbar
@@ -38,7 +40,6 @@ a {
 
 .hero {
 	background-image: url(../images/humanitarian-aid-939723_960_720.jpg);
-	background-repeat: no-repeat;
 	background-size: cover;
 	height: 600px;
 	margin: 0 auto;
