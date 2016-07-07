@@ -1,13 +1,21 @@
 .full-width {
 	max-width: 100% !important;
 }
-
+h1 {
+	color: #0066ff;
+}
 /*
   ========================================
   Navbar
   ========================================
 */
 
+.navbar {
+	background: black;
+}
+.navbar h1 {
+	color: white;
+}
 .topnavbar li {
   display: inline-block;
 }
@@ -28,16 +36,23 @@
 */
 
 .hero {
-	background-color: #4d4d4d;
+	background-image: url(../images/humanitarian-aid-939723_960_720.jpg);
+	background-repeat: no-repeat;
 	background-size: cover;
 	height: 600px;
 	margin: 0 auto;
 }
 .text {
-	color: black;
 	font-size: 25px;
 	margin: 40px auto;
 	text-align: center;
+}
+.text span {
+	background: black;
+	color: white;
+}
+.text a {
+	font-weight: 700;
 }
 
 /*
@@ -53,10 +68,21 @@
 	width:100%;
 }
 #about p {
-	color: blue;
 	font-size: 25px;
   position: absolute;
 	padding: 0 20px;
  	top: 100px;
   width: 100%;
+}
+#about h1 {
+	text-align: center;
+}
+/*
+  ========================================
+  Our Patners
+  ========================================
+*/
+.patners {
+	position: relative;
+	right: 40px;
 }
