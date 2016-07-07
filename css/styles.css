@@ -41,10 +41,10 @@ a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 600px;
+	margin: 0 auto;
 }
 .text {
 	font-size: 25px;
-
 	text-align: center;
 }
 .text span {
@@ -62,15 +62,18 @@ a {
 */
 
 #about {
+	background-image: url(../images/imageedit_50_3202316775.jpg);
+	background-size: cover;
+	height: 600px;
 	position: relative;
+	margin-bottom: 20px;
 }
 #about img {
 	width:100%;
 }
 #about p {
 	font-size: 25px;
-  position: absolute;
- 	top: 100px;
+	text-align: center;
   width: 100%;
 }
 #about h1 {
