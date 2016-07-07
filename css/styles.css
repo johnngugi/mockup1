@@ -3,7 +3,6 @@ h1 {
 }
 body {
 	font-family: 'Roboto', sans-serif;
-	margin: 0;
 }
 /*
   ========================================
@@ -43,7 +42,6 @@ a {
 	background-image: url(../images/humanitarian-aid-939723_960_720.jpg);
 	background-size: cover;
 	height: 600px;
-	margin: 0 auto;
 }
 .text {
 	font-size: 25px;
