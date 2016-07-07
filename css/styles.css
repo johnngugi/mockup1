@@ -1,29 +1,30 @@
-.full-width {
-	max-width: 100% !important;
-}
 h1 {
 	color: #0066ff;
 }
+
 /*
   ========================================
   Navbar
   ========================================
 */
 
-.navbar {
+a {
+	padding-left: 15px;
+	font-size: 25px;
+}
+.top-bar {
 	background: black;
 }
-.navbar h1 {
+.top-bar h1 {
 	color: white;
 }
-.topnavbar li {
+.top-bar li {
+	background: black;
   display: inline-block;
 }
 .bottomnavbar li {
 	display: inline-block;
-}
-.topnavbar nav {
-  text-align: right;
+	margin-top: 20px;
 }
 .bottomnavbar nav {
 	text-align: center;
@@ -40,11 +41,10 @@ h1 {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 600px;
-	margin: 0 auto;
 }
 .text {
 	font-size: 25px;
-	margin: 40px auto;
+
 	text-align: center;
 }
 .text span {
@@ -70,7 +70,6 @@ h1 {
 #about p {
 	font-size: 25px;
   position: absolute;
-	padding: 0 20px;
  	top: 100px;
   width: 100%;
 }
