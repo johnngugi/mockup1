@@ -15,6 +15,10 @@ a {
 	padding-left: 15px;
 	font-size: 25px;
 }
+.nav-placehilder {
+	height: 10%;
+	margin: 0 auto;
+}
 .top-bar {
 	background: black;
 }
@@ -32,6 +36,14 @@ a {
 .bottomnavbar nav {
 	text-align: center;
 }
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
 
 /*
   ========================================
@@ -42,11 +54,11 @@ a {
 .hero {
 	background-image: url(../images/humanitarian-aid-939723_960_720.jpg);
 	background-size: cover;
-	height: 600px;
+	height: 100%;
 }
 .text {
 	font-size: 25px;
-	margin: 10px auto;
+	margin: 30px auto;
 	text-align: center;
 }
 .text span {
@@ -66,7 +78,7 @@ a {
 #about {
 	background-image: url(../images/imageedit_50_3202316775.jpg);
 	background-size: cover;
-	height: 600px;
+	height: 100%;
 	position: relative;
 	margin-bottom: 20px;
 }
