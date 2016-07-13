@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+// Fixed Navbar
 var stickyNavTop = $('.top-bar').offset().top;
 $(".top-bar").wrap('<div class="nav-placeholder"></div>');
 $(".nav-placeholder").height($("nav").outerHeight);
