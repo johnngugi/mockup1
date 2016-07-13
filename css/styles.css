@@ -141,7 +141,7 @@ a {
     opacity: 0;
     z-index: 0;
     -webkit-backface-visibility: hidden;
-    animation: titleAnimation 30s linear infinite 0s;
+    animation: titleAnimation 45s linear infinite 0s;
 }
 .carousel li span {
     width: 100%;
@@ -153,7 +153,7 @@ a {
     opacity: 0;
     z-index: 0;
     -webkit-backface-visibility: hidden;
-    animation: imageAnimation 30s linear infinite 0s;
+    animation: imageAnimation 45s linear infinite 0s;
 }
 
 .carousel li:nth-child(1) span {
@@ -165,19 +165,19 @@ a {
     background-image: url(../images/children-63175_960_720.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    animation-delay: 10s;
+    animation-delay: 15s;
   }
 .carousel li:nth-child(3) span {
     background-image: url(../images/imageedit_50_3202316775.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    animation-delay: 20s;
+    animation-delay: 30s;
 }
 .carousel li:nth-child(2) div {
-    animation-delay: 10s;
+    animation-delay: 15s;
   }
 .carousel li:nth-child(3) div {
-    animation-delay: 20s;
+    animation-delay: 30s;
 }
 
 @keyframes imageAnimation {
