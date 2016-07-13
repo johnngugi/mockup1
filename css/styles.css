@@ -4,7 +4,9 @@ h1 {
 body {
 	font-family: 'Prompt', sans-serif;
 }
-
+li {
+	list-style-type: none;
+}
 /*
   ========================================
   Navbar
@@ -76,14 +78,9 @@ a {
 */
 
 #about {
-	background-image: url(../images/imageedit_50_3202316775.jpg);
-	background-size: cover;
 	height: 100%;
 	position: relative;
 	margin-bottom: 20px;
-}
-#about img {
-	width:100%;
 }
 #about p {
 	font-size: 25px;
@@ -96,9 +93,78 @@ a {
 
 /*
   ========================================
+  Carousel
+  ========================================
+*/
+
+.carousel li div h1 {
+	z-index: 200;
+	color: black;
+}
+.carousel li div {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0px;
+    position: absolute;
+    color: transparent;
+    opacity: 0;
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    animation: titleAnimation 30s linear infinite 0s;
+}
+.carousel li span {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0px;
+    position: absolute;
+    color: transparent;
+    opacity: 0;
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    animation: imageAnimation 30s linear infinite 0s;
+}
+
+.carousel li:nth-child(1) span {
+  background-image: url(../images/boot-998966_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel li:nth-child(2) span {
+    background-image: url(../images/children-63175_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-delay: 10s;
+  }
+.carousel li:nth-child(3) span {
+    background-image: url(../images/imageedit_50_3202316775.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-delay: 20s;
+}
+
+@keyframes imageAnimation {
+	0% {opacity: 0; animation-timing-function: ease-in;}
+	12.5% {opacity: 1; animation-timing-function: ease-out;}
+	25% {opacity: 1}
+	37.5% {opacity: 0}
+	100% {opacity: 0}
+}
+@keyframes titleAnimation {
+	0% {opacity: 0; animation-timing-function: ease-in;}
+	12.5% {opacity: 1; animation-timing-function: ease-out;}
+	25% {opacity: 1}
+	37.5% {opacity: 0}
+	100% {opacity: 0}
+}
+
+/*
+  ========================================
   Our Patners
   ========================================
 */
+
 .patners {
 	position: relative;
 	right: 40px;
