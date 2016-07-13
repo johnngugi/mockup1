@@ -27,7 +27,8 @@ li {
 }
 .row {
 	margin: 2% 5%;
-	max-width: 62.5rem;
+	max-width: 100%;
+	background: lightblue;
 	/*background: skyblue;*/
 }
 
@@ -192,4 +193,11 @@ a {
 	25% {opacity: 1}
 	37.5% {opacity: 0}
 	100% {opacity: 0}
+}
+form,
+form .row {
+	background: brown;
+	padding-top: 5%;
+	margin: 2% 5%;
+	max-width: 100%;
 }
