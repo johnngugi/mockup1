@@ -1,23 +1,19 @@
 $(document).ready(function() {
 
-// Fixed Navbar
-var stickyNavTop = $('.top-bar').offset().top;
-$(".top-bar").wrap('<div class="nav-placeholder"></div>');
-$(".nav-placeholder").height($("nav").outerHeight);
+  var navOffset = $(".top-bar").offset().top;
 
-var stickyNav = function(){
-var scrollTop = $(window).scrollTop();
+  $(".top-bar").wrap('<div class="nav-placeholder"></div>');
+  $(".nav-placeholder").height($(".top-bar").outerHeight);
 
-if (scrollTop > stickyNavTop) {
-    $('.top-bar').addClass('sticky');
-} else {
-    $('.top-bar').removeClass('sticky');
-}
-};
+  $(window).scroll(function () {
+    var scrollPos = $(window).scrollTop();
 
-stickyNav();
+    if (scrollPos >= navOffset) {
+      $(".top-bar").addClass("fixed");
+    } else {
+      $(".top-bar").removeClass("fixed");
+    }
+  });
 
-$(window).scroll(function() {
-    stickyNav();
-});
+
 });
