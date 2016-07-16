@@ -29,7 +29,6 @@ li {
 	margin: 2% 5%;
 	max-width: 100%;
 	background: lightblue;
-	/*background: skyblue;*/
 }
 
 /*
@@ -38,13 +37,18 @@ li {
   ========================================
 */
 
+.fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+}
+.nav-placeholder {
+		margin-bottom: 10%;
+}
 a {
 	padding-left: 15px;
 	font-size: 25px;
-}
-.nav-placehilder {
-	height: 10%;
-	margin: 0 auto;
 }
 .top-bar {
 	background: black;
@@ -52,9 +56,9 @@ a {
 .top-bar h1 {
 	color: white;
 }
-.top-bar li {
+.top-bar-right li  {
+	display: inline-block;
 	background: black;
-  display: inline-block;
 }
 .bottomnavbar li {
 	display: inline-block;
@@ -62,14 +66,6 @@ a {
 }
 .bottomnavbar nav {
 	text-align: center;
-}
-.sticky {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    border-top: 0;
 }
 
 /*
@@ -194,10 +190,20 @@ a {
 	37.5% {opacity: 0}
 	100% {opacity: 0}
 }
+
+/*
+  ========================================
+  Donation
+  ========================================
+*/
+
 form,
 form .row {
 	background: brown;
 	padding-top: 5%;
 	margin: 2% 5%;
 	max-width: 100%;
+}
+form p {
+	color: #fff;
 }
