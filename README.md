@@ -10,4 +10,6 @@ https://github.com/johnngugi/mockup1
 2. Donate
 3. About Us
 
+**Tools** Google Fonts, Foundation 6, Jquery
+
 **Contributors** [John Ngugi](https://github.com/johnngugi)
