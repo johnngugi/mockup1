@@ -1,6 +1,6 @@
 # Refugee Aid
 
-**Project Details** A website for an organisation that offers aid to refugees http://refugee-aid.bitballoon.com/
+**Project Details** A website for an organisation that offers aid to refugees https://johnngugi.github.io/mockup1/
 
 **Repo Link**
 https://github.com/johnngugi/mockup1
