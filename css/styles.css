@@ -1,34 +1,37 @@
 #bg {
-	min-height: 100%;
-  min-width: 100%;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-	z-index: -1;
-	opacity: 0.5;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
 }
 p, li {
-	font-size: 30px;
-	font-weight: 600;
+    font-size: 30px;
+    font-weight: 600;
 }
 h1 {
-	color: #0066ff;
+    color: #0066ff;
 }
 body {
-	font-family: 'Prompt', sans-serif;
+    font-family: 'Prompt', sans-serif;
 }
 li {
-	list-style-type: none;
+    list-style-type: none;
 }
 .full-width {
-	max-width: 100% !important;
+    max-width: 100% !important;
 }
 .row {
-	margin: 2% 5%;
-	max-width: 100%;
-	background: lightblue;
+    margin: 2% 5%;
+    max-width: 100%;
+    background: lightblue;
+}
+.row .title {
+    background: transparent;
 }
 
 /*
@@ -38,34 +41,34 @@ li {
 */
 
 .fixed {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 10000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
 }
 .nav-placeholder {
-		margin-bottom: 10%;
+    margin-bottom: 10%;
 }
 a {
-	padding-left: 15px;
-	font-size: 25px;
+    padding-left: 15px;
+    font-size: 25px;
 }
 .top-bar {
-	background: black;
+    background: black;
 }
 .top-bar h1 {
-	color: white;
+    color: white;
 }
-.top-bar-right li  {
-	display: inline-block;
-	background: black;
+.top-bar-right li {
+    display: inline-block;
+    background: black;
 }
 .bottomnavbar li {
-	display: inline-block;
-	margin-top: 20px;
+    display: inline-block;
+    margin-top: 20px;
 }
 .bottomnavbar nav {
-	text-align: center;
+    text-align: center;
 }
 
 /*
@@ -75,21 +78,21 @@ a {
 */
 
 .hero {
-	background-image: url(../images/humanitarian-aid-939723_960_720.jpg);
-	background-size: cover;
-	height: 100%;
+    background-image: url(../images/humanitarian-aid-939723_960_720.jpg);
+    background-size: cover;
+    height: 100%;
 }
 .text {
-	font-size: 25px;
-	margin: 30px auto;
-	text-align: center;
+    font-size: 25px;
+    margin: 30px auto;
+    text-align: center;
 }
 .text span {
-	background: black;
-	color: white;
+    background: black;
+    color: white;
 }
 .text a {
-	font-weight: 700;
+    font-weight: 700;
 }
 
 /*
@@ -99,17 +102,17 @@ a {
 */
 
 #about {
-	height: 100%;
-	position: relative;
-	margin-bottom: 20px;
+    height: 100%;
+    position: relative;
+    margin-bottom: 20px;
 }
 #about p {
-	font-size: 25px;
-	text-align: center;
-  width: 100%;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
 }
 .header {
-	margin-left: 30px;
+    margin-left: 30px;
 }
 
 /*
@@ -119,11 +122,11 @@ a {
 */
 
 .carousel li div h1 {
-	display: inline;
-	background: black;
-	z-index: 200;
-	color: white;
-	font-size: 25px;
+    display: inline;
+    background: black;
+    z-index: 200;
+    color: white;
+    font-size: 25px;
 }
 .carousel li div {
     width: 100%;
@@ -132,8 +135,8 @@ a {
     left: 0px;
     position: absolute;
     color: transparent;
-		text-align: center;
-		margin: 30px auto;
+    text-align: center;
+    margin: 30px auto;
     opacity: 0;
     z-index: 0;
     -webkit-backface-visibility: hidden;
@@ -151,18 +154,17 @@ a {
     -webkit-backface-visibility: hidden;
     animation: imageAnimation 45s linear infinite 0s;
 }
-
 .carousel li:nth-child(1) span {
-  background-image: url(../images/boot-998966_960_720.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url(../images/boot-998966_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .carousel li:nth-child(2) span {
     background-image: url(../images/children-63175_960_720.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     animation-delay: 15s;
-  }
+}
 .carousel li:nth-child(3) span {
     background-image: url(../images/imageedit_50_3202316775.jpg);
     background-repeat: no-repeat;
@@ -171,24 +173,47 @@ a {
 }
 .carousel li:nth-child(2) div {
     animation-delay: 15s;
-  }
+}
 .carousel li:nth-child(3) div {
     animation-delay: 30s;
 }
-
 @keyframes imageAnimation {
-	0% {opacity: 0; animation-timing-function: ease-in;}
-	12.5% {opacity: 1; animation-timing-function: ease-out;}
-	25% {opacity: 1}
-	37.5% {opacity: 0}
-	100% {opacity: 0}
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    12.5% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    25% {
+        opacity: 1
+    }
+    37.5% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
 }
 @keyframes titleAnimation {
-	0% {opacity: 0; animation-timing-function: ease-in;}
-	12.5% {opacity: 1; animation-timing-function: ease-out;}
-	25% {opacity: 1}
-	37.5% {opacity: 0}
-	100% {opacity: 0}
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    12.5% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    25% {
+        opacity: 1
+    }
+    37.5% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
 }
 
 /*
@@ -197,13 +222,92 @@ a {
   ========================================
 */
 
-form,
-form .row {
-	background: brown;
-	padding-top: 5%;
-	margin: 2% 5%;
-	max-width: 100%;
+form, form .row {
+    background: brown;
+    padding-top: 5%;
+    margin: 2% 5%;
+    max-width: 100%;
 }
 form p {
-	color: #fff;
+    color: #fff;
+}
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+.hovereffect .overlay {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    padding: 1em;
+    height: 4.75em;
+    background: #79FAC4;
+    color: #3c4a50;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+.hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+.hovereffect:hover img {
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+}
+.hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    float: left;
+    margin: 0px;
+    display: inline-block;
+}
+.hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 50px 0 0 0;
+    background-color: transparent;
+}
+.hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+}
+.hovereffect:hover p.icon-links a:hover, .hovereffect:hover p.icon-links a:focus {
+    color: #252d31;
+}
+.hovereffect h2, .hovereffect p.icon-links a {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
+}
+.hovereffect p.icon-links a span:before {
+    display: inline-block;
+    padding: 8px 10px;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.hovereffect:hover .overlay, .hovereffect:hover h2, .hovereffect:hover p.icon-links a {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
