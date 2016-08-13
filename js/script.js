@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    $(".hero").show(2000, "linear");
+
     var navOffset = $(".top-bar").offset().top;
 
     $(".top-bar").wrap('<div class="nav-placeholder"></div>');
