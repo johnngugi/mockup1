@@ -1,14 +1,14 @@
 $(document).ready(function() {
 
-  $("#owl-demo").owlCarousel({
+    $("#owl-demo").owlCarousel({
 
-      // navigation : true, // Show next and prev buttons
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true,
-      autoPlay : true
+        // navigation : true, // Show next and prev buttons
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        singleItem: true,
+        autoPlay: true
 
-  });
+    });
 
     // var navOffset = $(".top-bar").offset().top;
     //
