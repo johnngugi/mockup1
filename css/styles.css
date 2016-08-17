@@ -12,16 +12,12 @@ li {
     list-style-type: none;
 }
 .row {
-    margin: 2% 0;
+    margin: 2% 10%;
+    width: 80%;
+    text-align: center;
     /*background: lightblue;*/
 }
-.row .title {
-    background: transparent;
-}
-.row .button {
-    text-align: center;
-}
-#landing {
+#landing.row{
     margin: 0;
     top: 0;
 }
